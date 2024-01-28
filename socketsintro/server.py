@@ -2,7 +2,6 @@ import socket
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind(('localhost', 4571)) #or localhost
-    
     s.settimeout(10)
 
     try:
